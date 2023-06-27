@@ -26,13 +26,14 @@ const Login = () => {
                     <h3 className="text-2xl font-semibold">
                         Hey There <span className="wave">👋</span>
                     </h3>
-                    <button
-                        className="flex items-center gap-1 bg-green-600 text-white text-lg px-4 py-2 hover:bg-green-700"
-                        onClick={handleLogin}
+                    <a
+                        className="flex items-center gap-1 bg-green-600 text-white text-lg px-4 py-2 hover:bg-green-700 cursor-pointer"
+                        // onClick={handleLogin}
+                        href={authUrl}
                     >
                         <FaSpotify className="text-xl" />
                         Login with spotify
-                    </button>
+                    </a>
                 </div>
                 <div className="flex-1 max-w-sm sm:max-w-none">
                     <img
